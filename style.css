@@ -1,0 +1,205 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #e67e22;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+}
+
+
+body {
+    background-color: #f0f8ff; /* 背景顏色：淡藍色 */
+    font-family: Arial, sans-serif; /* 預設字體 */
+    text-align: center; /* 文字置中 */
+}
+
+h1 {
+    color: darkblue; /* 標題文字顏色 */
+}
+
+p {
+    color: darkslategray; /* 內文字顏色 */
+    font-size: 18px; /* 文字大小 */
+}
+
+img {
+    width: 300px; /* 設定圖片寬度 */
+    border-radius: 10px; /* 圓角邊框 */
+}
+
+.avatar {
+  width: 200px;       /* 固定圖片大小 */
+  height: 200px;      /* 固定高度 */
+  border-radius: 50%; /* 把圖片變成圓形 */
+  object-fit: cover;  /* 裁切圖片，避免變形 */
+  border: 3px solid #333; /* 加一圈黑色邊框 */
+}
+
+/* 導覽列 */
+.navbar {
+  background-color: #333; /* 深灰背景 */
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  list-style: none;   /* 移除前面的點點 */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* 水平排列 */
+  justify-content: center; /* 置中 */
+}
+
+.navbar li {
+  margin: 0 15px; /* 每個項目之間留空 */
+}
+
+.navbar a {
+  text-decoration: none; /* 移除底線 */
+  color: white;          /* 文字顏色白色 */
+  font-weight: bold;
+  transition: color 0.3s; /* 滑鼠移上去時有動畫 */
+}
+
+.navbar a:hover {
+  color: #ffcc00; /* 滑鼠移上去變金色 */
+}
+
+/* 整體版面容器 */
+.container {
+  display: flex;          /* 讓左右並排 */
+  max-width: 1000px;      /* 最大寬度 */
+  margin: 20px auto;      /* 置中 */
+  gap: 20px;              /* 左右間隔 */
+  padding: 0 20px;
+}
+
+/* 左邊欄位 */
+.sidebar {
+  flex: 1;                /* 左邊佔 1 份 */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* 右邊主要內容 */
+.content {
+  flex: 2;                /* 右邊佔 2 份 */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* 全站設定 */
+body {
+  font-family: "Microsoft JhengHei", sans-serif;  /* 字體：微軟正黑體 */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* 導覽列 */
+nav {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* 區塊設計 */
+.sidebar {
+  background-color: white;
+  border: 2px solid var(--primary-color);
+}
+.content {
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+}
+
+/* 標題設計 */
+h1, h2 {
+  color: var(--primary-color);
+}
+
+/* 按鈕設計 */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* 作品集區塊 */
+.portfolio {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.portfolio h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+/* 圖片格子牆 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 自動排版 */
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.gallery .item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持比例裁切 */
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1); /* 滑鼠移上去放大 */
+}
+
+/* 頁尾區塊 */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer .social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #ffdd57; /* 滑鼠移上去變亮 */
+}
